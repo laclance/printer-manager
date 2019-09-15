@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5206a78-d4a8-4071-91b6-2568ff2a8b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/AppNavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/AppSwitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/printer/PrinterEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/printer/PrinterList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/printer/PrinterNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/createStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/printers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/index.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568553453269</updated>
-      <workItem from="1568553456475" duration="7307000" />
+      <workItem from="1568553456475" duration="13813000" />
     </task>
     <servers />
   </component>
