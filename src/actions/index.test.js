@@ -4,19 +4,19 @@ import fetchMock from 'fetch-mock';
 import {API_URL} from '../api';
 import {addPrinter, deletePrinter, fetchPrinters, updatePrinter} from './index';
 import {
-    ADD_PRINTER_REQUEST,
-    ADD_PRINTER_SUCCESS,
-    DELETE_PRINTER_REQUEST,
-    DELETE_PRINTER_SUCCESS,
     FETCH_PRINTERS_REQUEST,
     FETCH_PRINTERS_SUCCESS,
+    ADD_PRINTER_REQUEST,
+    ADD_PRINTER_SUCCESS,
     UPDATE_PRINTER_REQUEST,
-    UPDATE_PRINTER_SUCCESS
+    UPDATE_PRINTER_SUCCESS,
+    DELETE_PRINTER_REQUEST,
+    DELETE_PRINTER_SUCCESS
 } from './types';
 
 const mockStore = configureMockStore([thunk]);
 
-const initialState = { printers: { printers: [] } };
+const initialState = { printers: null };
 const dummyPrinters = [{ 'id': 1, 'name': 'Test printer', 'ip_address': '1.1.1.1', 'status': 'inactive' }];
 
 describe('printer actions', () => {
