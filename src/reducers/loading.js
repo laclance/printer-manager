@@ -1,6 +1,14 @@
-export default (state = true, action) => {
-    if (action.type){
-        return action.type.includes('REQUEST');
+export default (state = true, {type}) => {
+    if (!type) {
+        return state;
+    }
+
+    if (type.includes('REQUEST')) {
+        return true;
+    }
+
+    if (type.includes('SUCCESS') || type.includes('FAILED')) {
+        return false;
     }
 
     return state;

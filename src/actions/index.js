@@ -23,7 +23,7 @@ export const addPrinter = (data) => (dispatch) => {
     dispatch({ type: ADD_PRINTER_REQUEST });
 
     return apiRequest('printers', 'POST', data).then(
-        (printer) => {
+        printer => {
             dispatch({ type: ADD_PRINTER_SUCCESS, printer });
         },
         error => {
@@ -36,7 +36,7 @@ export const updatePrinter = (data) => (dispatch) => {
     dispatch({ type: UPDATE_PRINTER_REQUEST });
 
     return apiRequest(`printers/${data.id}`, 'PUT', data).then(
-        (printer) => {
+        printer => {
             dispatch({ type: UPDATE_PRINTER_SUCCESS, printer });
         },
         error => {
