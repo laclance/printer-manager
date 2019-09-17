@@ -21,21 +21,14 @@ export default () => {
         return <Spinner/>;
     }
 
-    function renderContent () {
-        if (error) {
-            return <Alert message={'Sorry, there was a problem fetching your printers.'}/>;
-        }
-
-        if (printers.length === 0) {
-            return <Alert message={'There are currently no printers available.'}/>;
-        }
-
-        return <PrinterTable printers={printers}/>;
-    }
-
     return (
         <Container>
-            {renderContent()}
+            {error && <Alert message={error} type={'error'}/>}
+
+            {!error && printers.length === 0 &&
+            <Alert message={'There are currently no printers available.'}/>}
+
+            <PrinterTable printers={printers}/>
             <CenteredButton text='Refresh' onCLick={() => dispatch(fetchPrinters())}/>
         </Container>
     );

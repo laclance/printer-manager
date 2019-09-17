@@ -17,6 +17,7 @@ export default ({ onSubmit, printer }) => {
     return (
         <form className='mt-4' onSubmit={handleSubmit}>
             <div className='d-flex flex-column align-items-center'>
+
                 <div className='form-group w-25'>
                     <label className='ml-2'>
                         Name
@@ -24,6 +25,7 @@ export default ({ onSubmit, printer }) => {
                     <input className='form-control' type='text' value={inputs.name}
                            onChange={handleChange} name='name' required/>
                 </div>
+
                 <div className='form-group w-25'>
                     <label className='ml-2'>
                         IP Address
@@ -31,6 +33,7 @@ export default ({ onSubmit, printer }) => {
                     <input className='form-control' type='text' value={inputs.ip_address}
                            onChange={handleChange} name='ip_address' required/>
                 </div>
+
                 <div className='form-group w-25'>
                     <label className='ml-2'>
                         Status
@@ -40,10 +43,15 @@ export default ({ onSubmit, printer }) => {
                         <option value='active'>active</option>
                     </select>
                 </div>
-                {error && showMessage && <h4 className='text-danger'>{error}</h4>}
-                {success && showMessage && <h4 className='text-success'>
+
+                {error && showMessage &&
+                <h4 className='text-danger'>{error}</h4>}
+
+                {success && showMessage &&
+                <h4 className='text-success'>
                     {`Printer ${printer ? 'updated' : 'added'} successfully`}
                 </h4>}
+
             </div>
             <CenteredButton text={`${printer ? 'Edit' : 'Add'} Printer`}/>
         </form>

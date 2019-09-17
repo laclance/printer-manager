@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ message, type }) => (
-    <div className={`w-60 text-center ${alertClass(type)}`} role="alert">
+    <div className={`mb-5 w-60 text-center ${alertClass(type)}`} role="alert">
         <h2>{message}</h2>
     </div>
 );
