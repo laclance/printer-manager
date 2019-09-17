@@ -6,7 +6,7 @@ import {
     FETCH_PRINTERS_FAILED
 } from '../actions/types';
 
-export default (state = [], action) => {
+export default (state = null, action) => {
     switch (action.type) {
         case FETCH_PRINTERS_SUCCESS:
             return action.printers;

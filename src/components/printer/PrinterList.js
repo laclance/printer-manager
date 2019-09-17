@@ -12,12 +12,12 @@ export default () => {
     const { printers, loading, error } = useSelector((state) => state);
 
     useEffect(() => {
-        if (printers.length === 0) {
+        if (!printers) {
             dispatch(fetchPrinters());
         }
-    }, [dispatch, printers.length]);
+    }, [dispatch, printers]);
 
-    if (loading) {
+    if (loading || !printers) {
         return <Spinner/>;
     }
 

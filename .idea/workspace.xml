@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5206a78-d4a8-4071-91b6-2568ff2a8b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/printer/PrinterForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/success.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CenteredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CenteredButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/AppNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/AppNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterTableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterTableRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/printers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/printers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,21 +43,21 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reducers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src" />
-      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\printer" />
-      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\main\__tests__" />
-      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components" />
-      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\reducers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\main" />
       <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\printer" />
+      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\reducers" />
+      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src" />
+      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\printer" />
+      <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components\main\__tests__" />
       <recent name="C:\Users\Home\Desktop\projects\printer-manager\src\components" />
     </key>
   </component>
@@ -89,7 +87,7 @@
       <workItem from="1568620301975" duration="6750000" />
       <workItem from="1568631182306" duration="1302000" />
       <workItem from="1568643150766" duration="10397000" />
-      <workItem from="1568715241946" duration="8599000" />
+      <workItem from="1568715241946" duration="15799000" />
     </task>
     <servers />
   </component>
