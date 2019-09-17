@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import Spinner from '../Spinner';
 import {fetchPrinters} from '../../actions';
@@ -9,23 +9,25 @@ import Container from '../Container';
 
 export default () => {
     const dispatch = useDispatch();
-    const {printers, loading, error} = useSelector((state) => state);
+    const { printers, loading, error } = useSelector((state) => state);
 
-    if (!printers) {
-        dispatch(fetchPrinters());
-    }
+    useEffect(() => {
+        if (printers.length === 0) {
+            dispatch(fetchPrinters());
+        }
+    }, [dispatch, printers.length]);
 
     if (loading) {
-        return <Spinner message={'Fetching your printers.'}/>;
+        return <Spinner/>;
     }
 
-    function renderTable() {
+    function renderContent () {
         if (error) {
-            return <Alert message={'Sorry, there was a problem fetching your printers.'}/>
+            return <Alert message={'Sorry, there was a problem fetching your printers.'}/>;
         }
 
-        if (printers.length === 0 ) {
-            return <Alert message={'There are currently no printers available.'}/>
+        if (printers.length === 0) {
+            return <Alert message={'There are currently no printers available.'}/>;
         }
 
         return <PrinterTable printers={printers}/>;
@@ -33,7 +35,7 @@ export default () => {
 
     return (
         <Container>
-            {renderTable()}
+            {renderContent()}
             <CenteredButton text='Refresh' onCLick={() => dispatch(fetchPrinters())}/>
         </Container>
     );

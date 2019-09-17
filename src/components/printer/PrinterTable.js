@@ -1,7 +1,7 @@
 import React from 'react';
 import PrinterTableRow from './PrinterTableRow';
 
-export default ({printers, deletePrinter}) => (
+export default ({printers}) => (
     <table className='table table-striped table-bordered mr-5'>
         <thead>
         <tr>
@@ -17,7 +17,6 @@ export default ({printers, deletePrinter}) => (
                 <PrinterTableRow
                     key={printer.id}
                     {...printer}
-                    deletePrinter={deletePrinter}
                 />
             )}
         </tbody>

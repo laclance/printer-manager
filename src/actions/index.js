@@ -21,7 +21,6 @@ export const fetchPrinters = () => (dispatch) => {
 
 export const addPrinter = (data) => (dispatch) => {
     dispatch({ type: ADD_PRINTER_REQUEST });
-
     return apiRequest('printers', 'POST', data).then(
         printer => {
             dispatch({ type: ADD_PRINTER_SUCCESS, printer });
