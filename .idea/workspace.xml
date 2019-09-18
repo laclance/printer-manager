@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5206a78-d4a8-4071-91b6-2568ff2a8b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/reducers/__tests__/success.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/__tests__/updated.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/updated.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterEdit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/printer/PrinterList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/printer/PrinterList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/__tests__/error.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/__tests__/error.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/__tests__/printers.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/__tests__/printers.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/printers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/printers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/success.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/success.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +77,7 @@
       <workItem from="1568631182306" duration="1302000" />
       <workItem from="1568643150766" duration="10397000" />
       <workItem from="1568715241946" duration="16964000" />
-      <workItem from="1568793201773" duration="7026000" />
+      <workItem from="1568793201773" duration="7056000" />
     </task>
     <servers />
   </component>
