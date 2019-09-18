@@ -1,7 +1,7 @@
 import reducer from '../error';
 import {
     FETCH_PRINTERS_REQUEST,
-    FETCH_PRINTERS_FAILED,
+    FETCH_PRINTERS_FAILED, REMOVE_ERROR
 } from '../../actions/types';
 
 describe('error reducer', () => {
@@ -24,5 +24,13 @@ describe('error reducer', () => {
                 error: 'some error'
             })
         ).toEqual('some error');
+    });
+
+    it('should be null on REMOVE_ERROR', () => {
+        expect(
+            reducer('', {
+                type: REMOVE_ERROR
+            })
+        ).toEqual(null);
     });
 });

@@ -9,15 +9,15 @@ import Container from '../Container';
 
 export default () => {
     const dispatch = useDispatch();
-    const { printers, loading, error } = useSelector((state) => state);
+    const { printers, loading, error, updated } = useSelector((state) => state);
 
     useEffect(() => {
-        if (!printers) {
+        if (!updated) {
             dispatch(fetchPrinters());
         }
-    }, [dispatch, printers]);
+    }, [dispatch, updated]);
 
-    if (loading || !printers) {
+    if (loading) {
         return <Spinner/>;
     }
 

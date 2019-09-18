@@ -10,7 +10,7 @@ const dummyPrinters = [{ 'id': 1, 'name': 'Test printer', 'ip_address': '1.1.1.1
 
 describe('printers reducer', () => {
     it('should return the initial state', () => {
-        expect(reducer(undefined, {})).toEqual(null)
+        expect(reducer(undefined, {})).toEqual([])
     });
 
     it('should add printers on FETCH_PRINTERS_SUCCESS', () => {

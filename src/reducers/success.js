@@ -1,6 +1,6 @@
 import {ADD_PRINTER_SUCCESS, UPDATE_PRINTER_SUCCESS} from '../actions/types';
 
-export default (state = true, {type}) => {
+export default (state = false, {type}) => {
     if (!type) {
         return state;
     }
